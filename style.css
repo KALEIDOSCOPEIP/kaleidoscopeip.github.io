@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .transition-smooth {
+        transition: all 0.3s ease;
+    }
+}
+
+:root {
+    --primary: #3b82f6;
+    --secondary: #1e40af;
+    --light: #f3f4f6;
+    --dark: #1f2937;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+/* Custom styles for the academic profile */
+.profile-photo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.profile-photo img {
+    display: block;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.publication-card:hover {
+    transform: translateY(-3px);
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+}
+
+.activity-card:hover {
+    transform: translateY(-3px);
+}
+
+.misc-card:hover {
+    transform: translateY(-3px);
+}
